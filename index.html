@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CCXP 24</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div id="div1">
+        <img id="logo" src="logo/logo.svg"></img>
+        </div>
+    </header>
+   <section>
+    <!-- titulosParagrafo -->
+    <div id="divMain">
+        <div id="div2">
+            <h1 id="titulo1">
+               REVIVA O ÉPICO 
+            </h1>
+            <h2 id="titulo2">
+                DE 03 A 05 DE MAIO
+            </h2>
+            <P>
+                Você consegue sentir? É aquela sensação de<BR>
+                 finalmente poder falar em voz alta: "estamos<BR>
+                  em casa". Sim, em Maio de 2024,<BR>
+                   teremos a volta da CCXP física. Mas não será<BR>
+                    qualquer CCXP, vai ser a maior de todos os <BR>
+                    tempos. Prepare-se para visitar seus<BR>
+                 universos favoritos, explorar o Artists' Valley,<BR>
+                  se emocionar nos auditórios e encontrar <BR>
+                  aventuras épicas a cada passo pelos nossos <BR>
+                                    corredores.<BR>
+            </P>
+        </div>
+        <!-- CountDown -->
+        <div class="timer" id="div3">
+            <div>
+                <h1 class="timer" id="dia">00</h1>
+            </div>
+                <h1 class="uniMedida">D</h1>
+            <div>
+                <h1 class="timer" id="hora">00</h1> 
+            </div>
+                <h1 class="uniMedida">H</h1>
+            <div>
+                <h1 class="timer" id="minuto">00</h1>
+            </div>
+                <h1 class="uniMedida">M</h1>
+             <div>
+                <h1 class="timer" id="segundo">00</h1>
+            </div>
+                <h1 class="uniMedida">S</h1>
+        </div>
+        
+    </div>
+        <!-- titulo/Video -->
+        <div id="div4">
+            <h2 id="textoVideo">PARA A MAIOR CCXP DE TODOS OS TEMPOS</h2>
+            <video id="loop" width = "700px" controls loop><source src="videoplayback.mp4" type="video/mp4"></video>
+        </div>
+         <!-- Final -->
+        <div id="div5">
+            <div>
+            <h2 id="titulo3">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h2>
+            </div>
+            <div id="cards">
+               
+             <img  onclick="selectCard('#quinta')" id="quinta"  class="card-ingresso"src="cards/Img1.svg">
+             <img onclick="selectCard('#sexta')" id="sexta"  class="card-ingresso"src="cards/Img2.svg">
+             <img onclick="selectCard('#sabado')" id="sabado"  class="card-ingresso"src="cards/Img3.svg">
+             <img onclick="selectCard('#domingo')" id="domingo"  class="card-ingresso"src="cards/Img4.svg">
+
+             <button id="button" onclick="showSelectedCards()"><b>GARANTA O SEU!</b></button>
+                </div>
+            </div>
+        </div>
+   </section>
+   <script src="js.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>
